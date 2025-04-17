@@ -4,12 +4,12 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-[80vh] flex justify-center items-center bg-white">
+    <section className="w-full min-h-[85vh] relative flex justify-center overflow-hidden items-center bg-white">
       {/* Container for background + overlay */}
-      <div className="relative w-full max-w-5xl h-full">
+      <div className="relative w-full min-h-[85vh] flex justify-center items-center">
         {/* Background image with overlay */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center min-h-[85vh]"
           style={{
             backgroundImage: "url('/images/hero-bg.jpg')",
           }}
@@ -19,8 +19,8 @@ export default function Hero() {
         </div>
 
         {/* Content goes here */}
-        <div className="relative z-10 flex flex-col justify-center items-center text-center h-full px-30 py-80 gap-4">
-          <p className="mt-4 font-mono text-lg text-gray-100 drop-shadow-sm">
+        <div className="relative z-10 max-w-5xl mx-auto text-center px-4 py-24 flex flex-col items-center gap-4">
+          <p className="font-mono text-lg text-gray-100 drop-shadow-sm">
             Bloom into Spring with Joy
           </p>
 
