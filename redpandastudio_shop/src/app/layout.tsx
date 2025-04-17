@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Web Page Title
 export const metadata: Metadata = {
   title: "九节狼制皂所｜Ressāpanda Studio",
   description: "Explore Natural Cleaning Products",
@@ -25,7 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/favicon.ico" type="image/png" />
+        {/* Global Icon */}
+        <link rel="icon" href="/images/favicon.ico" type="image/png" /> 
       </head>
       <body>
         {children}
